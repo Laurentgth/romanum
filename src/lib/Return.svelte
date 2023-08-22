@@ -2,11 +2,11 @@
     export let returnDisplay
 </script>
 
-<div class="return-field">{returnDisplay ?? '– – –'}</div>
+<p class="return-field">{returnDisplay ?? '•'}</p>
 
 <style>
-    .return-field {
-        color: #2c5cd6;
+    p {
+        color: #3f2703;
         font-size: 3rem;
         text-align: center;
     }

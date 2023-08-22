@@ -16,14 +16,15 @@
     }
 </script>
 
-<main class="main">
-    <Header />
+<Header />
+<main>
     <Form on:entry={handleEntry} />
     <Return returnDisplay={returnValue} />
 </main>
 
 <style>
-    .main {
-        text-align: center;
+    main {
+        max-width: 500px;
+        margin: auto;
     }
 </style>

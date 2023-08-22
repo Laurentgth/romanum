@@ -1,21 +1,31 @@
 <script>
-    import romanLogo from '../assets/roman.svg'
+    import romanLogo from '../assets/colliseo.svg'
 </script>
 
 <header>
-    <img src={romanLogo} alt="Roman logo" class="logo" />
-    <h1 class="title">Roman Numeral Converter</h1>
+    <img src={romanLogo} alt="Roman logo" />
+    <h1>Romanum</h1>
+    <h2>is your Roman-Arabic Numeral Converter</h2>
 </header>
 
 <style>
-    .logo {
+    header {
+        text-align: center;
+    }
+
+    img {
         height: 6em;
         text-align: center;
         margin: auto;
     }
 
-    .title {
+    h1 {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
             sans-serif;
+    }
+
+    h2 {
+        font-size: 110%;
+        font-style: italic;
     }
 </style>

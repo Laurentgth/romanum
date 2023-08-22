@@ -20,21 +20,21 @@
 <input
     type="text"
     name="number"
-    class="number"
     bind:value={val}
     on:input={handleInput}
-    placeholder="number to convert"
+    placeholder="enter number to convert"
 />
 
 <style>
-    .number {
+    input {
         text-align: center;
         font-size: 1.5rem;
         height: 3rem;
         border: 2px solid transparent;
+        border-radius: 0.3rem;
         background-color: #e8dcb9;
     }
-    .number:focus {
+    input:focus {
         border-color: black;
     }
 </style>
