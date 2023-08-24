@@ -1,8 +1,8 @@
-<script>
-    export let returnDisplay
+<script lang="ts">
+    export let returnDisplay: string = '';
 </script>
 
-<p class="return-field">{returnDisplay ?? '•'}</p>
+<p class="return-field">{returnDisplay || '•'}</p>
 
 <style>
     p {

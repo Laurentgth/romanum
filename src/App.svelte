@@ -1,19 +1,19 @@
-<script>
-    import Form from './lib/Form.svelte'
-    import Header from './lib/Header.svelte'
-    import Return from './lib/Return.svelte'
-    import { processEntry } from './scripts/conversions'
+<script lang="ts">
+    import Form from './lib/Form.svelte';
+    import Header from './lib/Header.svelte';
+    import Return from './lib/Return.svelte';
+    import { processEntry } from './scripts/conversions';
 
-    let returnValue
+    let returnValue: string;
 
     /**
-     * Handles the value entered by user to process it in the conversion.
+     * Handles processing of value entered by user.
      *
      * @param event
      */
-    const handleEntry = event => {
-        returnValue = processEntry(event.detail) // event.detail contains user's input
-    }
+    const handleEntry = (event: CustomEvent): void => {
+        returnValue = processEntry(event.detail); // event.detail contains user's input
+    };
 </script>
 
 <Header />

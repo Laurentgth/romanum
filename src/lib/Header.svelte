@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import romanLogo from '../assets/colliseo.svg'
 </script>
 

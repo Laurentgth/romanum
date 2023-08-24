@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import UserEntry from './UserEntry.svelte'
 </script>
 

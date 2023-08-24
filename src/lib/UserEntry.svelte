@@ -1,7 +1,7 @@
-<script>
+<script lang="ts">
     import { createEventDispatcher } from 'svelte'
     import { rejectedCharactersRegex } from '../scripts/constants'
-    let val = ''
+    let val: string = ''
     const dispatch = createEventDispatcher()
 
     /**
@@ -11,7 +11,7 @@
      *
      * @return {undefined}
      */
-    const handleInput = () => {
+    const handleInput = (): void => {
         val = val.toUpperCase().replace(rejectedCharactersRegex, '')
         dispatch('entry', val)
     }
